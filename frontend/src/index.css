@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply bg-gray-100 text-gray-900 antialiased flex justify-center items-center min-h-screen;
+  }
+
+  /* Ensure text visibility in various contexts */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-gray-900 font-bold;
+  }
+
+  p,
+  span,
+  div {
+    @apply text-gray-800;
+  }
+
+  /* Style for buttons and interactive elements */
+  button,
+  input,
+  select,
+  textarea {
+    @apply text-gray-900 bg-white;
+  }
+}
